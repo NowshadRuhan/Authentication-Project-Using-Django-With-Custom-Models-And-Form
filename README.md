@@ -6,7 +6,7 @@
   1. Django bulid user models for user creation.
   2. UserInfo model for store user those information and custom models to create user.
 
- # Reation In models:
-  **User and UserInfo models reation is OneToOne.
+ # Relation In models:
+  **User and UserInfo models relation is OneToOne.
    
  
