@@ -9,4 +9,7 @@
  # Relation In models:
   **User and UserInfo models relation is OneToOne.
    
- 
+ # About forms:
+  1. UserForm create for modify django bulid user models fields.
+  2. UserInfoForm create for modify UserInfo models fields.
+
