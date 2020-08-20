@@ -1,0 +1,27 @@
+{% extends 'Login_app/base.html' %}
+{% load static %}
+{% block body_block %}
+
+
+<h3 align="center">Please Login ..</h3>
+<div class="main">
+    <div class="col-md-6 col-sm-12">
+      <div class="login-form">
+        <form enctype="multipart/form-data" action="{% url 'Login_app:userLogin' %}" method="POST">
+            <div class="form-group">
+              <label for="username">User Name : </label>
+                <input type="text" class="form-control" name="username" placeholder="User Name">
+            </div>
+            <div class="form-group">
+              <label>Password : </label>
+               <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+          {% csrf_token %}
+            <input class="btn btn-secondary" type="submit" name="submit" value="Login">
+          </form>
+      </div>
+    </div>
+</div>
+
+
+{% endblock %}

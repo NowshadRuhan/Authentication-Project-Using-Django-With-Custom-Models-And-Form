@@ -1,0 +1,16 @@
+{% extends 'Login_app/base.html' %}
+{% load static %}
+{% block body_block %}
+
+{% if user.is_authenticated %}
+<p> Hi {{ user_basic_info.username }}</p>
+<p>Your email : {{ user_basic_info.email }}</p>
+<p><a href="{{ user_more_info.facebook_id }}">Facebook </a></p>
+
+<img src="/media/{{ user_more_info.profile_pic }}" alt="{{ user_more_info.profile_pic }}" width="200px">
+
+{% else %}
+<h1 align="center">You are not Login ...</h1>
+<h2 align="center">Please, Login First...</h2>
+{% endif %}
+{% endblock %}
